@@ -5,10 +5,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "neeha-s3bucket-date"
+    bucket         = "himanshug-s3bucket-20240726"
     key            = "globalstate/s3/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "neeha-date-dblocks"
+    dynamodb_table = "himanshug-20240726-dblocks"
     encrypt        = true
   }
 }
